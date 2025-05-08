@@ -10,17 +10,20 @@
         "defi"
     ],
     "scripts": {
+        "snapshot": "npx blueprint snapshot --label 'current' -- --config gas-report.config.js",
+        "gas-report": "npx blueprint test --gas-report -- --config gas-report.config.js",
         "test": "jest --verbose",
         "build": "ts-node helpers/build.ts"
     },
     "devDependencies": {
-        "@ston-fi/funcbox": "0.1.4",
-        "@ton/blueprint": "^0.24.0",
-        "@ton/core": "^0.58.1",
+        "@ston-fi/funcbox": "0.1.8",
+        "@ton-community/func-js": "^0.9.1",
+        "@ton/blueprint": "file:../blueprint-bench/dist/@ton-blueprint-bech.tgz",
+        "@ton/core": "^0.60.1",
         "@ton/crypto": "^3.3.0",
-        "@ton/sandbox": "^0.22.0",
+        "@ton/sandbox": "file:../sandbox-bench/dist/@ton-sandbox-bech.tgz",
         "@ton/test-utils": "^0.4.2",
-        "@ton/ton": "^15.0.0",
+        "@ton/ton": "15.2.1",
         "@types/ejs": "^3.1.5",
         "@types/jest": "^29.5.13",
         "@types/node": "^22.5.5",

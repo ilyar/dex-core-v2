@@ -4,20 +4,47 @@
 
 Core contracts for the STON.fi DEX protocol V2.
 
-## Local Development
-The following assumes the use of `node@>=22`.
+## 👨🏻‍🔬 Collect metric
 
-### Install Dependencies
-`yarn install`
+**Build `@ton-sandbox-bech` and `@ton-blueprint-bech`:**
 
-### Compile Contracts
-`npm run build`
+```bash
+git clone --branch=feature/betch git@github.com:ton-org/sandbox.git sandbox-bench
+cd sandbox-bench
+yarn && yarn build && yarn pack --out dist/%s-bech.tgz && cd ..
 
-### Run Tests
-`npm run test`
+git clone --branch=feature/betch git@github.com:ton-org/blueprint.git blueprint-bench
+cd blueprint-bench
+yarn && yarn build && yarn pack --out dist/%s-bech.tgz && cd ..
 
-### Deploy Contracts
-`npm run deploy`
+git clone git@github.com:ston-fi/dex-core-v2.git
+cd dex-core-v2
+pnpm add -D ../sandbox-bench/dist/@ton-sandbox-bech.tgz ../blueprint-bench/dist/@ton-blueprint-bech.tgz
+```
+
+**Setup: [gas-report.config.js](gas-report.config.js)**
+**Run tests and collect metric:**
+
+```bash
+pnpm build
+npx func-js -v
+npx blueprint snapshot --label "func v0.4.4" -- --config gas-report.config.js
+```
+
+**Get report:**
+
+```bash
+pnpm add -D @ston-fi/funcbox @ton-community/func-js
+npx func-js -v
+pnpm build
+pnpm gas-report 
+pnpm snapshot
+```
+
+🧙🏻‍♂️ See result:
+- [.snapshot](.snapshot)
+- [gas-report.json](gas-report.json)
+- [contract.abi.json](contract.abi.json)
 
 ## Licensing
 The license for STON.fi Decentralized Exchange is the GNU General Public License v3.0 (GPL-3.0), see [LICENSE](LICENSE).

@@ -75,12 +75,15 @@ export async function getSeqNo(provider: NetworkProvider, address: Address, trie
             let client = provider.api();
             let runGetMethod: (method: string) => Promise<[TupleReader, number]>
             if (client instanceof TonClient4) {
-                runGetMethod = async (method: string) => { 
+                runGetMethod = async (method: string) => {
                     const res = await client.runMethod((await client.getLastBlock()).last.seqno, address, method)
                     return [res.reader, res.exitCode] as const
                 }
             } else {
-                runGetMethod = async (method: string) => { 
+                runGetMethod = async (method: string) => {
+                    if (!(client instanceof TonClient)) {
+                        throw new Error("TonClient4 does not support this method")
+                    }
                     const res = await client.runMethod(address, method)
                     return [res.stack, 0] as const
                 }
@@ -168,6 +171,9 @@ export async function getAccountBalance(provider: NetworkProvider, target: Addre
     if (client instanceof TonClient4) {
         data = (await client.getAccountLite((await client.getLastBlock()).last.seqno, targetAddress)).account.balance.coins;
     } else {
+        if (!(client instanceof TonClient)) {
+            throw new Error("TonClient4 does not support this method")
+        }
         data = await client.getBalance(targetAddress);
     }
 
@@ -176,16 +182,16 @@ export async function getAccountBalance(provider: NetworkProvider, target: Addre
 
 export async function fetchJettonData(jetton: OpenedContract<JettonMinterContract>, removeRaw= true): Promise<Optional<JettonContent & JettonData & { decimals : number }, "contentRaw" | "jettonWalletCode" | "content">> {
     const fetchDataNoFail = async (url: string) => {
-        try { 
+        try {
             return (await fetch(url)).json();
         } catch (error) {
             color.log(` - <y><bld>WARNING: failed to fetch <b>${url}`);
             return {};
         }
     }
-    
+
     let res: Optional<JettonContent & JettonData, "contentRaw" | "jettonWalletCode" | "content">
-    
+
     let jData;
     try {
         jData = await jetton.getJettonData();
@@ -197,19 +203,19 @@ export async function fetchJettonData(jetton: OpenedContract<JettonMinterContrac
     try {
         if (typeof jData.content === "string") {
             res = {
-                ...(await fetchDataNoFail(jData.content)), 
-                ...jData 
-            } 
+                ...(await fetchDataNoFail(jData.content)),
+                ...jData
+            }
         } else {
-            res = { 
-                ...jData.content, 
-                ...jData 
+            res = {
+                ...jData.content,
+                ...jData
             }
             delete res["content"]
             if (res.uri) {
-                res = { 
-                    ...(await fetchDataNoFail(res.uri)), 
-                    ...res 
+                res = {
+                    ...(await fetchDataNoFail(res.uri)),
+                    ...res
                 }
             }
         }
@@ -220,7 +226,7 @@ export async function fetchJettonData(jetton: OpenedContract<JettonMinterContrac
     if (removeRaw) {
         delete res["contentRaw"];
         delete res["jettonWalletCode"];
-    } 
+    }
     if (typeof res.decimals === "undefined") {
         color.log(` - <y><bld>WARNING: using default 9 decimals`);
         res.decimals = 9;
@@ -240,12 +246,15 @@ export async function getAccountState(provider: NetworkProvider, target: Address
     if (client instanceof TonClient4) {
         state = (await client.getAccountLite((await client.getLastBlock()).last.seqno, targetAddress)).account.state.type;
     } else {
+        if (!(client instanceof TonClient)) {
+            throw new Error("TonClient4 does not support this method")
+        }
         const resState = (await client.getContractState(targetAddress)).state;
         state = resState === "uninitialized" ? "uninit" : resState;
     }
 
     return state;
-} 
+}
 
 export async function waitForDeploy(provider: NetworkProvider, target: Address | OpenedContract<Contract> , maxAttempts: number = 75) {
     const logger = color.loggerBuilder(provider);
@@ -283,6 +292,9 @@ export async function getAccount(provider: NetworkProvider, target: Address | Op
     if (client instanceof TonClient) {
         throw new Error("TonClient does not support this method")
     }
+    if (!(client instanceof TonClient4)) {
+        throw new Error("TonClient4 does not support this method")
+    }
     let data = await client.getAccount((await client.getLastBlock()).last.seqno, targetAddress)
 
     return {
@@ -300,4 +312,4 @@ export async function getAccount(provider: NetworkProvider, target: Address | Op
         }
 
     }
-} 
+}

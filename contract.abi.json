@@ -1,0 +1,1330 @@
+{
+  "0x0a48127f565fa66a169e9fa1d52ddbce91399d9da41ab27966b706733f1c125d": "Router",
+  "0xf95ba0330b38cdf3459b1e811e5fc6fa6cfee566d7b764455c0468140365a737": "JettonMinterContract",
+  "0xa760d629d5343e76d045017d9dc216fc8a307a8377815feb2b0a5c490e733486": "JettonWalletContract",
+  "0xef30b80a45c45f5278a8cb58a8cfbd73acf71f5fe41518d0a8f38aa8abb18dee": "Pool",
+  "0x3444b239fe8dbbc2bf21d8dd0c158efd8b46d23fafa1fe950fae1ee96e326851": "LPWallet",
+  "0xe6b9ee95d2abe65d87307b76b0880febc870bf2141fab199dfdac393ea029c3f": "LPAccount",
+  "0xa663e381d245b7299fd6ac94bc588dcc9b21310df70ce55df98dd27653cf13d4": "RouterCWSI",
+  "0x7e164759e252a1c1190ac4006473741c104951b7d5055213df136bb13bf70045": "PoolCWSI",
+  "0x459f82d9915865fb794d990115e86686530dc8478189b14424d8243137830944": "LPAccount",
+  "0x058377a4fa99b221cf55923560b858627fdf80bfade8b29936a809fcc472dc64": "RouterWCPI",
+  "0x2861ea0676409e9f43fe09f4175180eb71902fb2582dc8beeecc47d011df17c1": "PoolWCPI",
+  "0xe6b0ea30f7bb488e94bcd74e6fd8465a9971a2035415d63ebc380770f9614a20": "RouterSI",
+  "0x946b71229a783fca041ccea721b14474717fbdf50d1facf3181252fab9a4a8cf": "PoolStable",
+  "0xebfdb4cf635a34b846479f07fe2f13635e4c8a6485b4abe9ef855e7a3b4b3392": "LPAccount",
+  "0x4dc4aab0a492540537b2312160b83f50e64f8e7de30f216dd50e00c2480cf6b6": "Router",
+  "0x35bf4b51584edbbe0376e9544c9f583ff65b2ec7316cac12391eb15ad3e3400d": "PoolCSI",
+  "0x5a7d547e052448e98736f35d7345eade62d76442eb5d9ac86e78183c10f04704": "LPAccount",
+  "0xb4977e49b61b4e6123bf6dd5827404e802292831eee3393e53104720ec2a0ec2": "Router",
+  "0x091762ef0b5ae006a5387cfc0d63d5aa8a145c7de0ea7c54b09ca40a0d6ac0d0": "Pool",
+  "0x7816cecd5e9e39cf310cf024c44a81024e9515dfae44969b5008508a6c59269a": "LPAccount",
+  "Router": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x29be3423"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x3d51269b"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x4e6707b7"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x68e89380"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x355d097e"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x2af4607c"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x62752512"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x58274069"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x75930d63"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x7362d09c"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x37c096df"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x50c6a654"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x6ecd527"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x6664de2a"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x66d0dff2"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x29d22935"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x38a6022f"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xb02fd5b"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x2993ade0"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x29be3423",
+        "header": 700331043
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "0x3d51269b",
+        "header": 1028728475
+      },
+      {
+        "name": "0x4e6707b7",
+        "header": 1315375031
+      },
+      {
+        "name": "0x68e89380",
+        "header": 1760072576
+      },
+      {
+        "name": "0x355d097e",
+        "header": 895289726
+      },
+      {
+        "name": "0x2af4607c",
+        "header": 720658556
+      },
+      {
+        "name": "0x62752512",
+        "header": 1651844370
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      },
+      {
+        "name": "0x58274069",
+        "header": 1478967401
+      },
+      {
+        "name": "0x75930d63",
+        "header": 1972571491
+      },
+      {
+        "name": "0x7362d09c",
+        "header": 1935855772
+      },
+      {
+        "name": "0x37c096df",
+        "header": 935368415
+      },
+      {
+        "name": "0x50c6a654",
+        "header": 1355195988
+      },
+      {
+        "name": "0x6ecd527",
+        "header": 116184359
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0x6664de2a",
+        "header": 1717886506
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x66d0dff2",
+        "header": 1724964850
+      },
+      {
+        "name": "0x29d22935",
+        "header": 701638965
+      },
+      {
+        "name": "0x38a6022f",
+        "header": 950403631
+      },
+      {
+        "name": "0xb02fd5b",
+        "header": 184745307
+      },
+      {
+        "name": "0x2993ade0",
+        "header": 697544160
+      }
+    ],
+    "name": "Router"
+  },
+  "JettonMinterContract": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x15"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x15",
+        "header": 21
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      }
+    ],
+    "name": "JettonMinterContract"
+  },
+  "JettonWalletContract": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x7362d09c"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x37c096df"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x50c6a654"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x6ecd527"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x6664de2a"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x63381632"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x490f09b"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0x7362d09c",
+        "header": 1935855772
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "0x37c096df",
+        "header": 935368415
+      },
+      {
+        "name": "0x50c6a654",
+        "header": 1355195988
+      },
+      {
+        "name": "0x6ecd527",
+        "header": 116184359
+      },
+      {
+        "name": "0x6664de2a",
+        "header": 1717886506
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0x63381632",
+        "header": 1664620082
+      },
+      {
+        "name": "0x490f09b",
+        "header": 76607643
+      }
+    ],
+    "name": "JettonWalletContract"
+  },
+  "PoolCPI": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x1ee4911e"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x1ee4911e",
+        "header": 518295838
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "PoolCPI"
+  },
+  "LPWallet": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x595f07bc"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x297437cf"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x6664de2a"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x595f07bc",
+        "header": 1499400124
+      },
+      {
+        "name": "0x297437cf",
+        "header": 695482319
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "0x6664de2a",
+        "header": 1717886506
+      }
+    ],
+    "name": "LPWallet"
+  },
+  "LPAccount": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xff8bfc6"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x6ecd527"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x24cfc100"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0xff8bfc6",
+        "header": 267960262
+      },
+      {
+        "name": "0x6ecd527",
+        "header": 116184359
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "0x24cfc100",
+        "header": 617595136
+      }
+    ],
+    "name": "LPAccount"
+  },
+  "RouterCWSI": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x2af4607c"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x62752512"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x2b8b3b62"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf163444a"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x58274069"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x75930d63"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x2af4607c",
+        "header": 720658556
+      },
+      {
+        "name": "0x62752512",
+        "header": 1651844370
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "0x2b8b3b62",
+        "header": 730544994
+      },
+      {
+        "name": "0xf163444a",
+        "header": 4049814602
+      },
+      {
+        "name": "0x58274069",
+        "header": 1478967401
+      },
+      {
+        "name": "0x75930d63",
+        "header": 1972571491
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "RouterCWSI"
+  },
+  "PoolCWSI": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x1ee4911e"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x4a2bddb0"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x1ee4911e",
+        "header": 518295838
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "0x4a2bddb0",
+        "header": 1244388784
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "PoolCWSI"
+  },
+  "RouterWCPI": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x2af4607c"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x62752512"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x2b8b3b62"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf163444a"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x58274069"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x75930d63"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x2af4607c",
+        "header": 720658556
+      },
+      {
+        "name": "0x62752512",
+        "header": 1651844370
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "0x2b8b3b62",
+        "header": 730544994
+      },
+      {
+        "name": "0xf163444a",
+        "header": 4049814602
+      },
+      {
+        "name": "0x58274069",
+        "header": 1478967401
+      },
+      {
+        "name": "0x75930d63",
+        "header": 1972571491
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "RouterWCPI"
+  },
+  "PoolWCPI": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x1ee4911e"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x1ee4911e",
+        "header": 518295838
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "PoolWCPI"
+  },
+  "RouterSI": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x2b8b3b62"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf163444a"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x58274069"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x75930d63"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x2b8b3b62",
+        "header": 730544994
+      },
+      {
+        "name": "0xf163444a",
+        "header": 4049814602
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "0x58274069",
+        "header": 1478967401
+      },
+      {
+        "name": "0x75930d63",
+        "header": 1972571491
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "RouterSI"
+  },
+  "PoolStable": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x1ee4911e"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x1ee4911e",
+        "header": 518295838
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "PoolStable"
+  },
+  "PoolCSI": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x1ee4911e"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x178d4519"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xd53276db"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x1ee4911e",
+        "header": 518295838
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x178d4519",
+        "header": 395134233
+      },
+      {
+        "name": "0xd53276db",
+        "header": 3576854235
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "PoolCSI"
+  },
+  "Pool": {
+    "receivers": [
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x1ee4911e"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x657b54f5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x6664de2a"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0xf8a7ea5"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x37c096df"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "0x26df39fc"
+        }
+      },
+      {
+        "receiver": "internal",
+        "message": {
+          "kind": "typed",
+          "type": "notSupported"
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "0x1ee4911e",
+        "header": 518295838
+      },
+      {
+        "name": "0x657b54f5",
+        "header": 1702581493
+      },
+      {
+        "name": "0x6664de2a",
+        "header": 1717886506
+      },
+      {
+        "name": "0xf8a7ea5",
+        "header": 260734629
+      },
+      {
+        "name": "0x37c096df",
+        "header": 935368415
+      },
+      {
+        "name": "0x26df39fc",
+        "header": 652163580
+      },
+      {
+        "name": "notSupported",
+        "header": 4294967295
+      }
+    ],
+    "name": "Pool"
+  }
+}
